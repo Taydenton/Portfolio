@@ -2,226 +2,289 @@
 <html>
 
 <head>
-  <title>Case Study</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/case-study.css">
   <link rel="stylesheet" href="styles/reset.css">
+
+  <!-- Nav Bar -->
+  <nav class="navbar">
+    <li class = "item"> <a href={home}>Home</a>
+    </li>
+    <li class = "item"> <a href={about_link}>About</a>
+    </li>
+    <li class = "item"> <a href={projects_link}>Projects</a>
+    </li>
+  </nav>
 </head>
 
-<!-- Nav Bar -->
-<nav>
-  <li> <a href={home}>Home</a>
-  </li>
-  <li> <a href={about_link}>About</a>
-  </li>
-  <li> <a href={projects_link}>Projects</a>
-  </li>
-</nav>
-
 <body>
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="project slogan">Create and share ideas in a way that is seamless and simply splendid.</h1>
-      <div class="laptop_image">
-        <img src="/images/laptop.png" alt="laptop">
-      </div>
-  </section>
-  </div>
+  <div class="master-container">
+    <section class="hero">
+        <h1 class="project-slogan">Create and share ideas in a way that is seamless and <strong>simply splendid.</strong></h1>
+        <div class="laptop-image">
+          <img src="/images/laptop.png" alt="laptop">
+        </div>
+    </section>
 
-  <!-- Introduction -->
-  <section class="container" id="intro">
-    <div>
-      <h2 class="project-title">Presenting SplendidSpace</h2>
-      <p>SplendidSpace is a web and mobile application that allows users to easily create written notes, save images and links and share content with friends and colleagues. SplendidSpace enhances the sharing aspect of cloud storage, allowing users to create
-        teams to quickly build and share products. SplendidSpace makes organization and collaboration simple and fun. For this project, I took on the design from start to finish. I utilized Sketch for most of the work, including wireframes and in conjunction
-        with Invision for my final clickable prototype.</p>
-      <button type="button">View Prototype</button>
-      <h2>THE PROBLEM</h2>
-      <p>There are various products on the market that promise to boost our productivity and make us more efficient. Google Drive and OneNote for example, each provide note taking and sharing services that while advertising convenience and productivity,
-        often fall short for users, lacking the consistency and collaboration technology that is often desired. For this particular project, the sharing aspect was an important feature to include, alongside creating and organizing content.</p>
-      <h2>THE SOLUTION</h2>
-      <p>SplendidSpace is a working solution to common cloud storage frustrations. SplendidSpace is a web and mobile application that allows users to easily create written notes, save images and links and share this content with friends and colleagues. SplendidSpace
-        also enhances the sharing aspect of cloud storage, by allowing users to create teams to quickly build and share products. SplendidSpace makes organization and collaboration simple and fun.</p>
-      <img src="/images/iphone 8.png" atl="iphone">
-    </div>
-  </section>
+    <!-- Introduction -->
+    <section class="introduction">
+        <h2 class="project-title">Presenting SplendidSpace</h2><br>
+        <p>SplendidSpace is a web and mobile application that allows users to easily create written notes, save images and links and share content with friends and colleagues. SplendidSpace enhances the sharing aspect of cloud storage, allowing users to
+          create teams to quickly build and share products. SplendidSpace makes organization and collaboration simple and fun. For this project, I took on the design from start to finish. I utilized Sketch for most of the work, including wireframes and
+          in conjunction with Invision for my final clickable prototype.</p><br><br>
+        <a class="button-2" href="#">View Prototype</a><br><br>
+        <h2 class = "intro-content">THE PROBLEM</h2><br>
+        <p class = "intro-content">There are various products on the market that promise to boost our productivity and make us more efficient. Google Drive and OneNote for example, each provide note taking and sharing services that while advertising convenience and productivity,
+          often fall short for users, lacking the consistency and collaboration technology that is often desired. For this particular project, the sharing aspect was an important feature to include, alongside creating and organizing content.</p><br>
+        <h2 class = "intro-content">THE SOLUTION</h2><br>
+        <p class = "intro-content">SplendidSpace is a working solution to common cloud storage frustrations. SplendidSpace is a web and mobile application that allows users to easily create written notes, save images and links and share this content with friends and colleagues.
+          SplendidSpace also enhances the sharing aspect of cloud storage, by allowing users to create teams to quickly build and share products. SplendidSpace makes organization and collaboration simple and fun.</p>
+    </section>
 
-  <!-- Research -->
-  <section class="container" id="intro">
-    <header>
-      <h2>THE RESEARCH<h2>
-      <h3>Surveys</h3>
-    <p>I began my research with a survey of current users of cloud storage products. I wanted to understand the habits and trends of my perspective users.<p2>
-    </header>
-      <h3>The Good</h3>
-      <ul>
-        <li>Easy to use</li>
-        <li>Can be accessed from any device</li>
-        <li>real-time collaboration</li>
-      </ul>
-        <h3>The Bad</h3>
-        <ul>
+    <!-- Research -->
+    <section class="research">
+      <header>
+        <h2 class = "research-content">THE RESEARCH<h2><br>
+          <h3 class = "research-content">Surveys</h3><br>
+          <p class = "research-content">I began my research with a survey of current users of cloud storage products. I wanted to understand the habits and trends of my perspective users.</p><br>
+        </header>
+        <h3>The Good</h3><br>
+        <ul class = "list">
+          <li>Easy to use</li>
+          <li>Can be accessed from any device</li>
+          <li>real-time collaboration</li><br>
+        </ul>
+        <h3>The Bad</h3><br>
+        <ul class = "list">
           <li>Privacy Concerns</li>
           <li>Most products haven't mastered multiple editing at the same time</li>
-          <li>Google sheets is not as good as excel</li>
+          <li>Google sheets is not as good as excel</li></br>
         </ul>
-<h3>Key Findings</h3>
-<p>Collaboration and sharing content with friends and coworkers is important for users, which they find to be difficult at times when utilizing current applications.
-  Understanding this primary use of cloud storage, it was clear that SplendidSpace would need to be compatible on multiple devices to ensure that content is easily accessible and shareable.</p>
+        <h3 class = "research-content">Key Findings</h3><br>
+        <p class = "research-content">Collaboration and sharing content with friends and coworkers is important for users, which they find to be difficult at times when utilizing current applications.
+          Understanding this primary use of cloud storage, it was clear that SplendidSpace would need to be compatible on multiple devices to ensure that content is easily accessible and shareable.</p>
+      </section>
 
-<!--People -->
-<section class="container" id="people">
-<header>
-<h2>THE PEOPLE</h2>
-      <p>After interviewing those that participated in my survey, I found that I have a couple different types of users, between the ages of 23 - 35. The average user mainly uses cloud storage for work or school purposes and will occasionally share photos
-        or links with friends and family outside of work life.</p>
-    </header>
-    <img src="/images/persona1.png" alt="persona1">
-    <p>Sarah, 25 years old</p>
-    <p>Account Manager</p>
-    <p>Seattle, WA</p>
-    <h3>Motivations</h3>
-    <p>Sarah uses Google Drive and Dropbox at work. She uses these tools to share spreadsheets and other projects with her co-workers. She appreciates the ability to easily access her files from work, home or elsewhere. Sarah enjoys the collaboration capabilities
-      of Google Drive and uses it for gropu projects often. She doesn’t use cloud storage much beyond work. She will occassionally will share photos with friends using Google Drive or will save a new recipe on Pintrest in her limited free time. She prefers
-      to use products that are free to no cost.</p>
-    <h3>Frustrations</h3>
-    <p>Google Drive doesn’t always have the same capabilities as Microsoft Office, and sometimes privacy can be an issue - she wants to ensure her content is safe.
-    </p>
-    <h3>“I use cloud storage for work. I share files and collaborate with collegues.”</h3>
-    </div>
-    <div>
+      <!--People -->
+      <section class="people">
+        <header>
+          <h2 class="people-text">THE PEOPLE</h2><br>
+        <p>After interviewing those that participated in my survey, I found that I have a couple different types of users, between the ages of 23 - 35. The average user mainly uses cloud storage for work or school purposes and will occasionally share photos
+          or links with friends and family outside of work life.</p><br>
+      </header>
+      <div class = "persona-img">
+      <img src="/images/persona1.png" alt="persona1">
+    </div><br>
+      <p class = "demographics">Amy | 25 years old | Account Manager | Seattle, WA</p><br>
+      <h3>Motivations</h3><br>
+      <p class = "persona-text"> Sarah uses Google Drive and Dropbox at work. She uses these tools to share spreadsheets and other projects with her co-workers. She appreciates the ability to easily access her files from work, home or elsewhere. Sarah enjoys the collaboration capabilities
+        of Google Drive and uses it for gropu projects often. She doesn’t use cloud storage much beyond work. She will occassionally will share photos with friends using Google Drive or will save a new recipe on Pintrest in her limited free time. She
+        prefers to use products that are free to no cost.</p><br>
+      <h3>Frustrations</h3><br>
+      <p class = "persona-text">Google Drive doesn’t always have the same capabilities as Microsoft Office, and sometimes privacy can be an issue - she wants to ensure her content is safe.
+      </p><br>
+      <p class = "quote">“I use cloud storage for work. I share files and collaborate with collegues.”</p><br>
+          <div class = "persona-img">
       <img src="/images/persona2.png" alt="persona2">
-      <p>Bryce, 31 years old</p>
-      <p>Law Student</p>
-      <p>Los Angeles, CA</p>
-      <h3>Motivations</h3>
-      <p>Bryce often uses cloud storage when doing group projects in class. He likes to use Google Drive to easily access files from others students and collaborate on shared work. Bryce appreciates Google Drive because it is doesn’t cost a thing, and he
+    </div><br>
+      <p class = "demographics"> Bryce | 31 years old | Law Student | Los Angeles, CA</p><br>
+      <h3>Motivations</h3><br>
+      <p class = "persona-text">Bryce often uses cloud storage when doing group projects in class. He likes to use Google Drive to easily access files from others students and collaborate on shared work. Bryce appreciates Google Drive because it is doesn’t cost a thing, and he
         is able to keep excel files, presentations, documents, and pictures all in one convient location.
-      </p>
-      <h3>Frustrations</h3>
-      <p>His only hesitation is security when it comes to saving items to the cloud. Bryce doesn’t use drop box because he can’t use it to collaborate very well. He doesn’t feel like dropbox has mastered this capability.
-      </p>
-      <h3>“Google Drive is my jam - it’s the best for my studies.”</h3>
-  </section>
-
-  <!-- COMPETITIVE ANALYSIS -->
-  <section class="container" id="other-guys">
-    <h2>THE OTHER GUYS</h2>
-    <p>There are plenty of competitors currently in the cloud storage market. I researched their strengths, weaknesses, opportunities, and threats to determine how SplendidSpace could provide the most value to users. Every application has it’s pros and cons.
-      For example, while Dropbox is a popular tool on the market to save and share content, users tend to be most frustrated that Dropbox has yet to completely nail the collaboration aspect of the product. Google Drive’s real time collaboration makes
-      it ideal for group projects, but it can get a bit cluttered with all of the apps and types of projects that can be created. Finally, Pintrest has its own corner of the market as it is a unique product primarily used “just for fun” and less for work
-      or school purposes. I learned through this analysis of major competitors what I wanted to focus upon for my own app - a simple product that is dedicated to collaboration, and while professional, has a youthful and energetic vibe that differs from
-      the rest of the market.
-    </p>
-    <img src="/images/competitors.png" alt="competitors">
-  </section>
-
-  <!-- The Architecture -->
-  <section class="container" id="architecture">
-    <header>
-      <h2>THE ARCHITECTURE</h2>
-    </header>
-    <h3>USER STORIES</h2>
-    <p>My next step was to create user stories that would inevitably be essential in the creation of my minimum viable product.
-      The list below helped me to create my user flows in order to help visualize how a user would complete various tasks. My high priority user stories are as follows:</p>
-<div class="list-1">
-<ul>
-<li>I want to create an account using Facebook</li>
-<li>I want to create an account using my email and password</li>
-<li>I want to upload a picture</li>
-<li>I want to save a link</li>
-<li>I want to create a note</li>
-<li>I want to create a project</li>
-</ul>
+      </p><br>
+      <h3>Frustrations</h3><br>
+      <p class = "persona-text">His only hesitation is security when it comes to saving items to the cloud. Bryce doesn’t use drop box because he can’t use it to collaborate very well. He doesn’t feel like dropbox has mastered this capability.
+      </p><br>
+      <p class = "quote">“Google Drive is my jam - it’s the best for my studies.”</p><br>
 </div>
-<div class="list-2">
-<ul>
-<li>I want to create a team</li>
-<li>I want to add friends using Facebook</li>
-<li>I want to add friends using email</li>
-<li>I want to sign out of my account</li>
-<li>I want to view content that has been shared with me</li>
-</ul>
-</div>
-<h3>USER FLOWS AND SITE MAP</h3>
-    <img src="images/userflows.png" alt="flows">
-    <p>The user stories were useful in creating my user flows. I wanted to be able to visualize how a user would use SplendidSpace. I built flows that would be important to my MVP. This included the onboarding process for new and returning users, adding
-      friends, saving links and uploading photos. My user flows helped me to create my site map, where I was able to create a web of the flow of someone moving from page to page on the site.
-    </p>
-    <img src="images/sitemap.png" alt="map">
+    </section>
+
+    <!-- COMPETITIVE ANALYSIS -->
+    <section class="other-guys">
+      <h2>THE OTHER GUYS</h2><br>
+      <div class = "component">
+      <img src="/images/component.png" alt="competitors">
+    </div>
+      <p class="other-guys-text">There are plenty of competitors currently in the cloud storage market. I researched their strengths, weaknesses, opportunities, and threats to determine how SplendidSpace could provide the most value to users. Every application has it’s pros and
+        cons. For example, while Dropbox is a popular tool on the market to save and share content, users tend to be most frustrated that Dropbox has yet to completely nail the collaboration aspect of the product. Google Drive’s real time collaboration
+        makes it ideal for group projects, but it can get a bit cluttered with all of the apps and types of projects that can be created. Finally, Pintrest has its own corner of the market as it is a unique product primarily used “just for fun” and less
+        for work or school purposes. I learned through this analysis of major competitors what I wanted to focus upon for my own app - a simple product that is dedicated to collaboration, and while professional, has a youthful and energetic vibe that
+        differs from the rest of the market.
+      </p><br><br>
+    </section>
+
+    <!-- The Architecture -->
+    <section class="architecture">
+      <header>
+        <h2>THE ARCHITECTURE</h2><br>
+      </header>
+      <h3>USER STORIES</h3>
+        <p class = "architecture-text">My next step was to create user stories that would inevitably be essential in the creation of my minimum viable product.
+          The list below helped me to create my user flows in order to help visualize how a user would complete various tasks. My high priority user stories are as follows:</p>
+        <div class="list">
+        <ul>
+        <li>I want to create an account using Facebook</li>
+        <li>I want to create an account using my email and password</li>
+        <li>I want to upload a picture</li>
+        <li>I want to save a link</li>
+        <li>I want to create a note</li>
+        <li>I want to create a project</li>
+        </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li>I want to create a team</li>
+            <li>I want to add friends using Facebook</li>
+            <li>I want to add friends using email</li>
+            <li>I want to sign out of my account</li>
+            <li>I want to view content that has been shared with me</li>
+          </ul>
+        </div>
+      </section>
+
+      <!--User Flows---->
+      <section class = "user-flows">
+        <h3 class = "user-flows-content">USER FLOWS AND SITE MAP</h3><br><br>
+        <div class = "flows">
+      <img src="images/userflows.png" alt="flows">
+    </div>
+      <p class = "user-flows-content">The user stories were useful in creating my user flows. I wanted to be able to visualize how a user would use SplendidSpace. I built flows that would be important to my MVP. This included the onboarding process for new and returning users, adding
+        friends, saving links and uploading photos. My user flows helped me to create my site map, where I was able to create a web of the flow of someone moving from page to page on the site.
+      </p>
+      <div class = "sitemap">
+      <img src="images/sitemap.png" alt="map">
+    </div>
+    </section>
 
     <!-- DESIGN -->
-    <section class="container" id="design">
+    <section class="design">
       <header>
-        <h2>THE BRAND AND DESIGN</h2>
+        <h2 class = "design-content">THE BRAND AND DESIGN</h2><br></br>
       </header>
-      <h3>logo</h3>
-      <p>The logo for SplendidSpace is simple and easy to recall. The abstract “S” shape also coincides with the name of the brand.</p>
-      <img src="images/sketches.png" alt="sketches">
+      <section class = "design2">
+      <h3 class = "design-content">LOGO</h3><br></br>
+      <p class = "design-content">The logo for SplendidSpace is simple and easy to recall. The abstract “S” shape also coincides with the name of the brand.</p><br></br>
+    <div class = "logo1">
       <img src="images/splendidspace.png" alt="logo1">
+    </div>
+    <div class = "logo2">
       <img src="images/splendidspace2.png" alt="logo2">
+    </div>
+  </section>
+</section>
+    <div class = "sketches">
+    <img src="images/sketches.png" alt="sketches">
+  </div>
       <header>
-        <h3>COLOR AND TYPOGRAPHY</h3>
+
+        <!--COLOR & TYPOGRAPHY-->
+        <section = "color-type">
+        <h3>COLOR AND TYPOGRAPHY</h3><br>
       </header>
-      <p>The color palette that includes bright and fun accent colors to help create a tone that is both playful and energetic.</p>
-      <img src="images/colors.png" alt="colors">
-      <img src="images/typography1.png" alt="type1">
+      <p>The color palette that includes bright and fun accent colors to help create a tone that is both playful and energetic.</p><br><br>
+      <section class = "hex-codes">
+        <div class = "colors">
+        <img src="images/colors.png" alt="colors">
+      </div>
+      <div class = "list2">
+      <ul>
+      <li>Teal</li>
+      <li>HEX #008695</li>
+      <li>RGB 0/134/139</li>
+    </ul>
+    <ul>
+    <li>Dark Coral</li>
+    <li>HEX #008695</li>
+    <li>RGB 0/134/139</li>
+  </ul>
+  <ul>
+  <li>Sunny Yellow</li>
+  <li>HEX #008695</li>
+  <li>RGB 0/134/139</li>
+</ul><br>
+  </div>
+    </section>
+    <div class = "typography">
+      <img src="images/typography1.png" alt="type1"><br>
+    </div>
       <p>Oswald is the title font used for headlines. It may be used in Regular, light or Bold weight.</p>
+      <div class = "typography">
       <img src="images/typography2.png" alt="type2">
-      <p>Droid Sans is the secondary typeface, mainly utilized for subtitles and body text. This type may be used in Regular or Bold weight.</p>
+    </div>
+      <p>Droid Sans is the secondary typeface, mainly utilized for subtitles and body text. This type may be used in Regular or Bold weight.</p><br>
       <header>
-        <h3>WIREFRAMES</h3>
+      </section>
+
+      <!---WIREFRAMES--->
+      <section class="wireframes">
+        <h3>WIREFRAMES</h3><br>
         <p>After grasping an understanding of what tasks would need to be included in the final product, I created my wireframes to test the functionality of SplendidSpace. At first, these were rough hand drawn sketches that eventually developed into wireframes
           built using Sketch.</p>
       </header>
+      <div class = "screenshot">
       <img src="images/sketch1.png" alt="sketch1">
+    </div>
+    <div class = "screenshot">
       <img src="images/screenshot1.png" alt="screenshot1">
+    </div>
+    <div class = "screenshot">
       <img src="images/sketch2.png" alt="sketch2">
+    </div>
+    <div class = "screenshot">
       <img src="images/screenshot2.png" alt="screenshot2">
-      <p>The Sketch wireframes helped me to test the tasks that I knew would need to be completed for my MVP. I found flaws and various aspects of the app would that would need editing through the feedback I received. I used Invision for this segment of
+  </div>
+      <p class = "wireframe-text">The Sketch wireframes helped me to test the tasks that I knew would need to be completed for my MVP. I found flaws and various aspects of the app would that would need editing through the feedback I received. I used Invision for this segment of
         the design process.</p>
     </section>
 
     <!-- USER TESTING -->
-    <section class="container" id="testing">
+    <section class="testing">
       <header>
-        <h2>THE USER TESTING</h2>
+        <h2>THE USER TESTING</h2><br></br>
       </header>
       <div>
-        <p>I next transformed my wireframes into a high fidelity prototype. After finishing this test, I completed additional testing using Usability Hub in order to understand which iterations of my design were most compelling for users. Finally, I completed
+        <p class = "testing-text">I next transformed my wireframes into a high fidelity prototype. After finishing this test, I completed additional testing using Usability Hub in order to understand which iterations of my design were most compelling for users. Finally, I completed
           my clickable prototype, where I was able to view 3 additional people use the product. This last test helped me to make some last minute changes to the design. For example, I decided to do away with the “settings” icon, as most users were accustomed
           to clicking on a profile picture to complete this step.</p>
       </div>
+      <div class = "version">
       <img src="/images/versiona1.png" alt="versiona1">
+    </div>
+    <div class = "version">
       <img src="/images/versionb1.png" alt="versionb1">
+    </div>
+    <div class = "version">
       <img src="/images/versiona2.png" alt="versiona2">
+    </div>
+    <div class = "version">
       <img src="/images/versionb2.png" alt="versionb2">
-      <div>
-        <p>After completing the preference test on the above designs, found that 75% of those I tested prefered the blue menu bar, and the colored tabs vs. the coral tabs were 15% more popuar amoung my testers.</p>
-      </div>
+    </div>
+      <p>After completing the preference test on the above designs, found that 75% of those I tested prefered the blue menu bar, and the colored tabs vs. the coral tabs were 15% more popuar amoung my testers.</p>
     </section>
 
     <!-- LEARNING -->
-    <section class="container" id="learning">
+    <section class="learning">
       <header>
-        <h2>WHAT I LEARNED</h2>
+        <h2>WHAT I LEARNED</h2><br>
       </header>
-      <p>Using my research, I created a final product that helps meet the needs of the client and the end user. SplendidSpace is a simple tool, and provides the user the ability to better collaborate on mobile and desktop devices - creating a seamless experience
+      <p class = "learning-text">Using my research, I created a final product that helps meet the needs of the client and the end user. SplendidSpace is a simple tool, and provides the user the ability to better collaborate on mobile and desktop devices - creating a seamless experience
         when working on projects with colleagues. Those that used the app appreciated the simple design, and were able to click through easily when asked to complete certain tasks.</p>
-      <button type="button">View Prototype</button>
+      <!-- <a class="button-2" href="#">View Prototype</a><br> -->
     </section>
+      <a class="button-2" href="#">View Prototype</a>
 
-    <footer>
-      <h2>Let's Connect!</h2>
-      <ul>
-        <li> <a href="https://www.linkedin.com/in/taylor-denton/">LinkedIn</a> </li>
-        <li> <a href="https://github.com/Taydenton">GitHub</a> </li>
-        <li> <a href="https://www.facebook.com/taylor.denton.52">Facebook</a> </li>
-        <li> <a href="mailto:{taydenton@gmail.com}">Email</a> </li>
-      </ul>
-    </footer>
+  <footer class = "footer-content">
+    <h2>Let's Connect!</h2>
+      <ul class = "flex-container center">
+      <li class = "flex-item"> <a href="https://www.linkedin.com/in/taylor-denton/">LinkedIn</a> </li>
+      <li class = "flex-item"> <a href="https://github.com/Taydenton">GitHub</a> </li>
+      <li class = "flex-item"> <a href="https://www.facebook.com/taylor.denton.52">Facebook</a> </li>
+      <li class = "flex-item"> <a href="mailto:{taydenton@gmail.com}">Email</a> </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
