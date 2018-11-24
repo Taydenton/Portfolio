@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: url(/images/IMG_5260.jpg) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Overpass', sans-serif;
+  font-family: "Chivo", sans-serif;
+}
+
+body p {
+font-family: Overpass;
+font-size: 1.6rem;
+line-height: 2rem;
+}
+
+body hr {
+  background-color: #AE60C2;
+     color: #AE60C2;
+     border: solid 2px #AE60C2;
+     height: 5px;
+     width:
+}
+
+.item {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  font-style: Chivo;
+}
+
+.navbar {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar li:last-child {
+  margin-right: auto;
+}
+
+.navbar a {
+  color: #AE60C2;
+  display: block;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1rem;
+  margin: 1rem;
+  padding-right: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.personal-logo {
+  margin: 1rem;
+  width: 100px;
+  float: left;
+}
+
+.slogan {
+color: #FFF;
+text-align: left;
+margin-left: 15%;
+margin-right: 27%;
+padding-top: 15%;
+}
+
+@media screen and (max-width: 575px) {
+  .slogan {
+  font-size: 1.2rem;
+  }
+}
+
+.biography {
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 5%;
+}
+
+@media screen and (max-width: 575px) {
+  body p {
+font-size: 1.2rem;
+  }
+}
+
+body footer {
+  font-family: Chivo;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #048A81
+}
+
+.flex-item a:link {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  color: #AE60C2;
+  text-decoration: none;
+}
+
+.footer-content {
+  height: 5rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  grid-area: learning;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+.learning-text {
+  padding-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
