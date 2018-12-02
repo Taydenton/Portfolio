@@ -28,25 +28,17 @@ body p {
   line-height: 2rem;
 }
 
+/* homepage */
 .container {
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: flex-start;
-  list-style: none;
-  margin-top: 2.5rem;
-  margin-right: 3rem;
-  text-decoration: none;
-  text-align: center;
-}
-
 .personal-logo{
   margin: 1rem;
   width: 100px;
+  float: left;
 }
 
 @media screen and (max-width: 575px) {
@@ -55,7 +47,15 @@ body p {
   }
 }
 
-.navbar li:first-child {
+.navbar {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar li:last-child {
   margin-right: auto;
 }
 
@@ -70,7 +70,7 @@ body p {
   text-transform: uppercase;
 }
 
-.hero {
+.hero1 {
    display: flex;
    flex-direction: column;
    align-items: left;
@@ -79,30 +79,29 @@ body p {
    width: 100%;
 }
 
-.hero h1{
+.hero1 h1{
   color: #048A81;
   font-family: 'Chivo', sans-serif;
   font-size: 5.6rem;
   font-weight: 700;
-  /* line-height: 10vw; */
 }
 
-.hero span{
+.hero1 span{
   color:#7bb7b2;
 }
 
-.slogan{
-  color: #000000;
+.slogan1{
+  color: black;
   font-family: 'Chivo', sans-serif;
   padding-top:3rem;
 }
 
 @media screen and (max-width: 575px) {
-  .slogan {
+  .slogan1 {
 font-size: 1.2rem;
   }
 
-  .hero h1 {
+  .hero1 {
 font-size: 3.6rem;
   }
 }
@@ -221,4 +220,193 @@ font-size: 3.6rem;
   font-family: 'Chivo', sans-serif;
   font-size: .8rem;
   text-decoration: none;
+}
+
+.hero span{
+  color:#7bb7b2;
+}
+
+.slogan{
+  color: #000000;
+  font-family: 'Chivo', sans-serif;
+  padding-top:3rem;
+}
+
+@media screen and (max-width: 575px) {
+  .slogan {
+font-size: 1.2rem;
+  }
+
+  .hero h1 {
+font-size: 3.6rem;
+  }
+}
+
+.introduction {
+  margin-left: 5rem;
+  margin-bottom: 15%;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #048A81;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+.featured-wrapper {
+  background-color: #AE60C2;
+  color: #FFFFFF;
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  .featured-wrapper {
+    flex-direction: column;
+    margin: auto;
+    height:auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding:5rem;
+}
+
+.splendid-space{
+  width: 80%;
+}
+
+.featured-header {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.featured-text {
+  line-height: 2rem;
+}
+.featured-text span{
+  font-weight: 700;
+}
+
+.button {
+  background-color: transparent;
+  border: .2rem solid #fff;
+  border-radius: 5rem;
+  color: #fff;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* bio */
+body hr {
+  background-color: #AE60C2;
+     color: #AE60C2;
+     border: solid 2px #AE60C2;
+     height: 5px;
+     width:
+}
+
+.item {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  font-style: Chivo;
+}
+
+.personal-logo {
+  margin: 1rem;
+  width: 100px;
+  float: left;
+}
+
+.slogan {
+color: #FFF;
+text-align: left;
+margin-left: 15%;
+margin-right: 27%;
+padding-top: 15%;
+}
+
+@media screen and (max-width: 575px) {
+  .slogan {
+  font-size: 1.2rem;
+  }
+}
+
+.biography {
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 5%;
+}
+
+@media screen and (max-width: 575px) {
+  body p {
+font-size: 1.2rem;
+  }
+}
+
+body footer {
+  font-family: Chivo;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #048A81
+}
+
+.flex-item a:link {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  color: #AE60C2;
+  text-decoration: none;
+}
+
+.footer-content {
+  height: 5rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  grid-area: learning;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+.learning-text {
+  padding-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
