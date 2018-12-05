@@ -46,7 +46,17 @@ body p {
     width: 75px;
   }
 }
-
+ /* new */
+.navbar a:link {
+  color: #AE60C2;
+  float: right;
+  text-decoration: none;
+}
+@media screen and (max-width: 575px) {
+  .navbar {
+    justify-content: center;
+  }
+}
 .navbar {
   flex-direction: row-reverse;
   display: flex;
@@ -58,6 +68,25 @@ body p {
 .navbar li:last-child {
   margin-right: auto;
 }
+
+
+
+
+
+
+
+/*
+.navbar {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar li:last-child {
+  margin-right: auto;
+} */
 
 .navbar a {
   color: #AE60C2;
