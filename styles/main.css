@@ -69,25 +69,6 @@ body p {
   margin-right: auto;
 }
 
-
-
-
-
-
-
-/*
-.navbar {
-  flex-direction: row-reverse;
-  display: flex;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.navbar li:last-child {
-  margin-right: auto;
-} */
-
 .navbar a {
   color: #AE60C2;
   display: block;
@@ -348,6 +329,13 @@ font-size: 3.6rem;
 }
 
 /* bio */
+header {
+  background: url(/images/IMG_5260.jpg) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
 body hr {
   background-color: #AE60C2;
      color: #AE60C2;
