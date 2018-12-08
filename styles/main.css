@@ -204,7 +204,7 @@ font-size: 3.6rem;
 .footer h3 {
   flex-direction: row;
   font-family: 'Chivo', sans-serif;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-weight: 700;
   padding-bottom:2rem;
   color: #048A81
@@ -335,15 +335,6 @@ header {
   justify-content: center;
   text-align: center;
 }
-
-body hr {
-  background-color: #AE60C2;
-     color: #AE60C2;
-     border: solid 2px #AE60C2;
-     height: 5px;
-     width:
-}
-
 .item {
   height: 5rem;
   line-height: 5rem;
@@ -385,7 +376,7 @@ font-size: 1.2rem;
 
 body footer {
   font-family: Chivo;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-weight: bold;
   color: #048A81
 }

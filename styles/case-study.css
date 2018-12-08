@@ -7,26 +7,26 @@ body {
 }
 
 body h1 {
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   font-size: 2.2rem;
 }
 
 body h2 {
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
 }
 
 body h3 {
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   margin-left: 15%;
 }
 
 body p {
-  font-family: overpass;
+  font-family: 'Overpass', sans-serif;
   font-size: 1.6rem;
   line-height: 2rem;
   margin-right: 15%;
@@ -34,7 +34,7 @@ body p {
 }
 
 .list {
-  font-family: Overpass;
+  font-family: 'Overpass', sans-serif;
   font-size: 1.6rem;
   margin-right: 15%;
   margin-left: 15%;
@@ -52,7 +52,7 @@ body p {
 
 body nav {
   color: #AE60C2;
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   font-size: 1rem;
 }
 
@@ -103,7 +103,7 @@ body nav {
   border-radius: 80px;
   color: #AE60C2;
   font-weight: 300;
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   font-size: 1.6rem;
   height: 3rem;
   margin: auto;
@@ -144,7 +144,7 @@ body nav {
 }
 
 .project-slogan {
-  font-family: chivo;
+  font-family: 'Chivo', sans-serif;
   font-style: bold;
   margin-left: 5%;
   margin-right: 5%;
@@ -161,7 +161,7 @@ body nav {
   background-color: #008695;
   color: white;
   display: flex;
-  font-family: Chivo;
+  font-family: 'Chivo', sans-serif;
   flex-direction: row;
   grid-area: hero;
   height: 33rem;
@@ -449,7 +449,7 @@ body nav {
 }
 
 .list2 {
-  font-family: Overpass;
+  font-family: 'Overpass', sans-serif;
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
@@ -546,8 +546,8 @@ body nav {
 /* learning */
 
 body footer {
-  font-family: Chivo;
-  font-size: 1.2rem;
+  font-family: 'Chivo', sans-serif;
+  font-size: .8rem;
   font-weight: bold;
   color: #048A81
 }
@@ -591,9 +591,6 @@ body footer {
 }
 
 @media screen and (max-width: 414px) {
-  body footer {
-    font-size: 1rem;
-  }
   .flex-item a:link {
     padding: .5rem;
   }
