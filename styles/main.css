@@ -57,6 +57,8 @@ body p {
     justify-content: center;
   }
 }
+
+
 .navbar {
   flex-direction: row-reverse;
   display: flex;
@@ -74,10 +76,12 @@ body p {
   display: block;
   font-family: 'Chivo', sans-serif;
   font-size: 1rem;
-  margin: 1rem;
-  padding-right: 3rem;
-  text-decoration: none;
-  text-transform: uppercase;
+}
+
+body nav {
+  color: #AE60C2;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1rem;
 }
 
 .hero1 {
