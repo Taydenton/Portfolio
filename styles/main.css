@@ -133,15 +133,6 @@ font-size: 3.6rem;
   margin: auto;
   padding-bottom: 4rem;
 }
-
-.column{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  padding:5rem;
-}
-
 .featured-wrapper {
    background-color: #AE60C2;
    color: #FFFFFF;
@@ -168,7 +159,13 @@ font-size: 3.6rem;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    padding:5rem;
+    padding: 5rem;
+  }
+
+  @media screen and (max-width: 375px) {
+.column {
+padding-right: 3rem;
+}
   }
 
   .splendid-space{
@@ -209,46 +206,6 @@ font-size: 3.6rem;
     border: .2rem solid #fff;
     border-radius: 2rem;
   }
-}
-
-.footer {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 5rem;
-  margin-top: 2.5rem;
-  width:100%;
-}
-.footer h3 {
-  flex-direction: row;
-  font-family: 'Chivo', sans-serif;
-  font-size: .8rem;
-  font-weight: 700;
-  padding-bottom:2rem;
-  color: #048A81
-}
-
-.footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom:2rem;
-  width:100%;
-}
-
-.footer li {
-  list-style: none;
-  text-align: center;
-  padding-right:2rem;
-}
-
-.footer a {
-  color: #AE60C2;
-  font-family: 'Chivo', sans-serif;
-  font-size: .8rem;
-  text-decoration: none;
 }
 
 .hero span{
