@@ -13,7 +13,7 @@ h1 {
 }
 
 body h2 {
-font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -29,13 +29,14 @@ body p {
 }
 
 /* homepage */
+
 .container {
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 
-.personal-logo{
+.personal-logo {
   margin: 1rem;
   width: 100px;
   float: left;
@@ -46,18 +47,20 @@ body p {
     width: 75px;
   }
 }
- /* new */
+
+/* new */
+
 .navbar a:link {
   color: #AE60C2;
   float: right;
   text-decoration: none;
 }
+
 @media screen and (max-width: 575px) {
   .navbar {
     justify-content: center;
   }
 }
-
 
 .navbar {
   flex-direction: row-reverse;
@@ -85,42 +88,40 @@ body nav {
 }
 
 .hero1 {
-   display: flex;
-   flex-direction: column;
-   align-items: left;
-   justify-content: center;
-   padding:10rem;
-   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 10rem;
+  width: 100%;
 }
 
-.hero1 h1{
+.hero1 h1 {
   color: #048A81;
   font-family: 'Chivo', sans-serif;
   font-size: 5.6rem;
   font-weight: 700;
 }
 
-.hero1 span{
-  color:#7bb7b2;
+.hero1 span {
+  color: #7bb7b2;
 }
 
-.slogan1{
+.slogan1 {
   color: black;
   font-family: 'Chivo', sans-serif;
-  padding-top:3rem;
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 575px) {
   .slogan1 {
-font-size: 1.2rem;
+    font-size: 1.2rem;
   }
-
   .hero1 {
     padding: 5rem;
   }
-
   .hero1 h1 {
-font-size: 3.6rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -133,54 +134,57 @@ font-size: 3.6rem;
   margin: auto;
   padding-bottom: 4rem;
 }
+
 .featured-wrapper {
-   background-color: #AE60C2;
-   color: #FFFFFF;
-   display: flex;
- }
-
- @media screen and (max-width: 575px) {
-   .featured-wrapper {
-     flex-direction: column;
-     margin: auto;
-     height:auto;
-   }
- }
-
- .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    padding: 5rem;
-  }
-
-  @media screen and (max-width: 375px) {
-.column {
-padding-right: 3rem;
+  background-color: #AE60C2;
+  color: #FFFFFF;
+  display: flex;
 }
-  }
 
-  .splendid-space{
-    width: 80%;
+@media screen and (max-width: 575px) {
+  .featured-wrapper {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .column {
+    padding-right: 3rem;
+  }
+}
+
+.splendid-space {
+  width: 80%;
+}
 
 .featured-header {
   padding-bottom: 2rem;
   padding-top: 2rem;
   font-weight: bold;
 }
+
 .featured-text {
   line-height: 2rem;
 }
-.featured-text span{
+
+.featured-text span {
   font-weight: 700;
 }
 
@@ -201,30 +205,22 @@ padding-right: 3rem;
   vertical-align: middle;
 }
 
-@media screen and (max-width: 575px) {
-  .button {
-    border: .2rem solid #fff;
-    border-radius: 2rem;
-  }
+.hero span {
+  color: #7bb7b2;
 }
 
-.hero span{
-  color:#7bb7b2;
-}
-
-.slogan{
+.slogan {
   color: #000000;
   font-family: 'Chivo', sans-serif;
-  padding-top:3rem;
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 575px) {
   .slogan {
-font-size: 1.2rem;
+    font-size: 1.2rem;
   }
-
   .hero h1 {
-font-size: 3.6rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -232,9 +228,9 @@ font-size: 3.6rem;
   margin-left: 5rem;
   margin-bottom: 15%;
 }
-}
 
 /* bio */
+
 header {
   background: url(/images/IMG_5260.jpg) center / cover;
   height: 60vh;
@@ -250,28 +246,28 @@ header {
 }
 
 .slogan {
-color: #FFF;
-text-align: left;
-margin-left: 15%;
-margin-right: 27%;
-padding-top: 15%;
+  color: #FFF;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 27%;
+  padding-top: 15%;
 }
 
 @media screen and (max-width: 575px) {
   .slogan {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
 .biography {
-margin-left: 15%;
-margin-right: 15%;
-margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 575px) {
   body p {
-font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
