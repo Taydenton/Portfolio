@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Chivo', sans-serif;
+}
+
+h1 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+}
+
+body h2 {
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+body h3 {
+  font-size: 1.6rem;
+}
+
+body p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.container {
+background-image: linear-gradient(to left top, #e1c5e8, #e6d4f0, #ece3f6, #f4f1fb, #ffffff);
+}
+
+/* homepage */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-logo {
+  margin: 1rem;
+  width: 100px;
+  float: left;
+}
+
+@media screen and (max-width: 575px) {
+  .personal-logo {
+    width: 75px;
+  }
+}
+
+/* new */
+
+.navbar a:link {
+  color: #AE60C2;
+  /* float: right; */
+  text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+.navbar {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin-right: auto;
+  float: left;
+}
+
+/* ul {
+margin-left: auto;
+padding-right: 50%;
+} */
+
+/* .navbar li:last-child {
+  margin-right: auto;
+} */
+
+.navbar a {
+  color: #AE60C2;
+  /* display: block; */
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.4rem;
+}
+
+.navbar a:hover {
+color: #048A81;
+}
+
+body nav {
+  color: #AE60C2;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1rem;
+}
+
+.hero1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 10rem;
+  width: 100%;
+}
+
+.hero1 h1 {
+  color: #048A81;
+  font-family: 'Chivo', sans-serif;
+  font-size: 9.5rem;
+  font-weight: 700;
+}
+
+.hero1 span {
+  color: #7bb7b2;
+}
+
+.slogan1 {
+  color: black;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.8rem;
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+  .slogan1 {
+    font-size: 1.2rem;
+  }
+  .hero1 {
+    padding: 5rem;
+  }
+  .hero1 h1 {
+    font-size: 6rem;
+  }
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #048A81;
+  margin: auto;
+  padding-bottom: 4rem;
+}
+
+.featured-wrapper {
+  color: black;
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  .featured-wrapper {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .column {
+    padding-right: 3rem;
+  }
+}
+
+.splendid-space {
+  width: 80%;
+}
+
+.featured-header {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.featured-text {
+  line-height: 2rem;
+}
+
+.featured-text span {
+  font-weight: 700;
+}
+
+.button {
+  background-color: transparent;
+  border: .3rem solid #048A81;
+  border-radius: 5rem;
+  color: #048A81;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 15rem;
+  height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-image:none;
+  background-color:#048A81;
+  color: #FFF;
+  }
+
+
+.hero span {
+  color: #7bb7b2;
+}
+
+.slogan {
+  color: #000000;
+  font-family: 'Chivo', sans-serif;
+  padding-top: 3rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+
+
+
+
+@media screen and (max-width: 575px) {
+  .slogan {
+    font-size: 1.2rem;
+  }
+  .hero h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.introduction {
+  margin-left: 5rem;
+  margin-bottom: 15%;
+}
+
+/* bio */
+
+header {
+  background: url(/images/IMG_5260.jpg) center / cover;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.item {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  font-style: Chivo;
+}
+
+.slogan {
+  color: #FFF;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 27%;
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 575px) {
+  .slogan {
+    font-size: 1.2rem;
+  }
+}
+
+.biography {
+  margin-left: 24%;
+  margin-right: 24%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 575px) {
+  body p {
+    font-size: 1.2rem;
+  }
+}
+
+body footer {
+  font-family: Chivo;
+  font-size: .8rem;
+  font-weight: bold;
+  color: #048A81
+}
+
+.flex-item a:link {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 1rem;
+  color: #AE60C2;
+  text-decoration: none;
+}
+
+.flex-item a:hover {
+color: #048A81;
+}
+
+.footer-content {
+  height: 5rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  grid-area: learning;
+  padding-top: 5rem;
+  margin: auto;
+}
+
+.learning-text {
+  padding-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
