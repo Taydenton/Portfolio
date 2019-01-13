@@ -28,21 +28,53 @@ body p {
   line-height: 2rem;
 }
 
-.container {
-background-image: linear-gradient(to left top, #e1c5e8, #e6d4f0, #ece3f6, #f4f1fb, #ffffff);
+/* header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
 }
+
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+} */
+
+/* header h1 {
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 699px) {
+  .svg--lg {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .svg--sm {
+    display: none;
+  }
+} */
 
 /* homepage */
 
 .container {
   display: flex;
   flex-direction: column;
+  /* background-color: #F7F0F9; */
 }
 
 .personal-logo {
   margin: 1rem;
+  margin-left: 5rem;
   width: 100px;
-  float: left;
 }
 
 @media screen and (max-width: 575px) {
@@ -51,11 +83,33 @@ background-image: linear-gradient(to left top, #e1c5e8, #e6d4f0, #ece3f6, #f4f1f
   }
 }
 
+.laptop-col {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.laptop-image {
+  width: 80%;
+  margin-left: 15%;
+  margin-bottom: 15%;
+}
+
+@media screen and (max-width: 575px) {
+  .laptop-image {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+}
+
 /* new */
 
 .navbar a:link {
   color: #AE60C2;
-  /* float: right; */
   text-decoration: none;
 }
 
@@ -65,29 +119,30 @@ background-image: linear-gradient(to left top, #e1c5e8, #e6d4f0, #ece3f6, #f4f1f
   }
 }
 
+.navbar li:last-child {
+  margin-right: auto;
+}
+
+.navbar li:first-child {
+  margin-right: 10rem;
+}
+
 .navbar {
   flex-direction: row-reverse;
   display: flex;
   padding: 0;
   list-style: none;
-  margin-right: auto;
-  float: left;
+  position: fixed;
+  background-color: #FFF;
+  opacity: 0.9;
+  width: 100%;
 }
-
-/* ul {
-margin-left: auto;
-padding-right: 50%;
-} */
-
-/* .navbar li:last-child {
-  margin-right: auto;
-} */
 
 .navbar a {
   color: #AE60C2;
   /* display: block; */
   font-family: 'Chivo', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .navbar a:hover {
@@ -100,19 +155,45 @@ body nav {
   font-size: 1rem;
 }
 
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 .hero1 {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  padding: 10rem;
+  padding-left: 10rem;
+  padding-top: 15rem;
+  padding-right: 10rem;
   width: 100%;
+  background-color: #F0E2F3;
 }
 
 .hero1 h1 {
   color: #048A81;
   font-family: 'Chivo', sans-serif;
-  font-size: 9.5rem;
+  font-size: 17rem;
   font-weight: 700;
 }
 
@@ -123,35 +204,69 @@ body nav {
 .slogan1 {
   color: black;
   font-family: 'Chivo', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   padding-top: 3rem;
+  line-height: 3rem;
 }
 
 @media screen and (max-width: 575px) {
   .slogan1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .hero1 {
-    padding: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
   }
+
   .hero1 h1 {
-    font-size: 6rem;
+    font-size: 8rem;
+    margin-top: 6rem;
   }
+
 }
 
-.arrow-down {
+/* .arrow-down {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #048A81;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #048A81;
   margin: auto;
-  padding-bottom: 4rem;
+  padding-top: 9rem;
+  margin-top: 10%;
+} */
+
+@-webkit-keyframes downarrow {
+  0% { -webkit-transform: translateY(0); opacity: 0.4 }
+  100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
+}
+
+.arrow {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #048A81;
+  border-style:solid;
+  border-width:0 3em;
+  display:block;
+  height:0;
+  margin:10em auto;
+  opacity:0.4;
+  text-indent:-9999px;
+  transform-origin: 50% 50%;
+  width:0;
+}
+
+.down {
+  -webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
+  border-top:3em solid #048A81;
 }
 
 .featured-wrapper {
   color: black;
   display: flex;
+  flex-direction: row;
+  background-color: #F0E2F3;
 }
 
 @media screen and (max-width: 575px) {
@@ -160,6 +275,14 @@ body nav {
     margin: auto;
     height: auto;
   }
+
+.arrow-down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #048A81;
+}
+
+
 }
 
 .row {
@@ -175,12 +298,14 @@ body nav {
   flex-basis: 100%;
   flex: 1;
   padding: 5rem;
-}
-
-@media screen and (max-width: 375px) {
-  .column {
-    padding-right: 3rem;
-  }
+  background-color: #FFF;
+  grid-area: 1/2/1/6
+  min-height; 100%;
+  padding: 7.2rem 6.4vw;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  /* border: .25rem solid #F0E2F3; */
 }
 
 .splendid-space {
@@ -190,17 +315,32 @@ body nav {
 .featured-header {
   padding-bottom: 2rem;
   padding-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: bold;
   color: black;
+  text-align: center;
 }
 
 .featured-text {
-  line-height: 2rem;
+  line-height: 2.2rem;
+text-align: center;
+  font-size: 2rem;
 }
 
 .featured-text span {
   font-weight: 700;
+}
+
+@media screen and (max-width: 575px) {
+  .featured-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .featured-header {
+    font-size: 2rem;
+  }
 }
 
 .button {
@@ -209,21 +349,32 @@ body nav {
   border-radius: 5rem;
   color: #048A81;
   font-family: 'Chivo', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-top: 2rem;
   padding: 1rem;
-  width: 15rem;
+  width: 20rem;
   height: 4rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  align-content: center;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .button:hover {
   background-image:none;
   background-color:#048A81;
   color: #FFF;
+  }
+
+  @media screen and (max-width: 575px) {
+    .button {
+      font-size: 1.4rem;
+      width: 16rem;
+    }
   }
 
 
@@ -239,13 +390,10 @@ body nav {
   line-height: 3rem;
 }
 
-
-
-
-
 @media screen and (max-width: 575px) {
   .slogan {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   .hero h1 {
     font-size: 3.6rem;
@@ -276,32 +424,30 @@ header {
 .slogan {
   color: #FFF;
   text-align: left;
-  margin-left: 15%;
+  margin-left: 27%;
   margin-right: 27%;
   padding-top: 15%;
 }
 
-@media screen and (max-width: 575px) {
-  .slogan {
-    font-size: 1.2rem;
-  }
-}
-
 .biography {
-  margin-left: 24%;
-  margin-right: 24%;
+  margin-left: 28%;
+  margin-right: 28%;
   margin-top: 5%;
 }
 
 @media screen and (max-width: 575px) {
   body p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  header {
+  height: 40vh;
   }
 }
 
 body footer {
   font-family: Chivo;
-  font-size: .8rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #048A81
 }
