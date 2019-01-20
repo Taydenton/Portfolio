@@ -27,8 +27,7 @@ body h3 {
   font-family: 'Chivo', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
-  /* text-align: center; */
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 body p {
@@ -118,6 +117,10 @@ body nav {
   background-color: #AE60C2;
   color: #FFFFFF;
   width: 100%;
+}
+
+.project-slogan span {
+  font-weight: 700;
 }
 
 .connect-links a:link {
@@ -301,13 +304,17 @@ font-weight: bold;
 padding-top: 2rem;
 }
 
+.research-title {
+margin-left: 25%;
+}
+
 .research-list {
 border-radius: 1rem;
 background-color: rgba(175, 101, 194, .5);
 margin-right: 20%;
 margin-left: 20%;
-margin-top: 5%;
-margin-bottom: 5%;
+margin-top: 2%;
+margin-bottom: 2%;
 }
 
 @media screen and (max-width: 575px) {
@@ -368,6 +375,10 @@ margin-bottom: 5%;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: auto auto;
+}
+
+.people-title {
+margin-left: 25%;
 }
 
 .people-text {
@@ -543,7 +554,7 @@ color: #AE60C2;
 }
 
 .design2 {
-margin-bottom: 5%;
+/* margin-bottom: 2%; */
 }
 
 .design-content {
@@ -602,6 +613,10 @@ margin-bottom: 5%;
 font-size: 1.4rem;
 line-height: 2.7rem;
 margin-left: 2%;
+}
+
+.design-title {
+margin-left: 25%;
 }
 
 .logo-row {
@@ -741,11 +756,11 @@ margin-right: 20%;
 
 .wireframe-text {
   margin-bottom: 2%;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 .wireframes {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 @media screen and (max-width: 575px) {
@@ -858,7 +873,7 @@ body footer {
 .learning {
   display: flex;
   flex-direction: column;
-  grid-area: learning;
+  grid-area: 'learning';
   padding-top: 5rem;
 }
 
