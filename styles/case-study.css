@@ -7,10 +7,6 @@ html {
   font-family: 'Chivo', sans-serif;
 }
 
-body {
-  /*max-width: 1400px;*/
-}
-
 body h1 {
   font-family: 'Chivo', sans-serif;
   font-size: 2.2rem;
@@ -493,9 +489,6 @@ margin-bottom: 2%;
     margin-left: 20%;
     margin-right: 20%;
   }
-/* .architecture {
-width: 100%;
-} */
 
 }
 
@@ -553,25 +546,8 @@ font-weight: bold;
 color: #AE60C2;
 }
 
-.design2 {
-/* margin-bottom: 2%; */
-}
-
-.design-content {
-  /* margin-left: 25%;
-  margin-right: 25%; */
-}
-
 .color-type {
   grid-area: 'color-type';
-}
-
-.color {
-
-}
-
-.hex-codes {
-
 }
 
 .style-guide {
@@ -756,7 +732,6 @@ margin-right: 20%;
 
 .wireframe-text {
   margin-bottom: 2%;
-  /* margin-top: 2%; */
 }
 
 .wireframes {
@@ -839,8 +814,6 @@ padding: 1rem;
     display: block;
   }
 }
-
-
 
 /* learning */
 
