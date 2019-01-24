@@ -48,6 +48,10 @@ body p {
   .list {
     font-size: 1.2rem;
   }
+
+  body h3 {
+    margin-left: 5%;
+  }
 }
 
 body nav {
@@ -248,12 +252,7 @@ body nav {
     margin-right: auto;
     margin-bottom: 2rem;
   }
-  .logo-image {
-    width: 15rem;
-  }
-  .sketches {
-    width: 70%;
-  }
+
   .project-slogan {
     font-size: 2rem;
     margin-top: 20%;
@@ -300,9 +299,9 @@ font-weight: bold;
 padding-top: 2rem;
 }
 
-.research-title {
+/* .research-title {
 margin-left: 25%;
-}
+} */
 
 .research-list {
 border-radius: 1rem;
@@ -432,6 +431,10 @@ margin-bottom: 2%;
 @media screen and (max-width: 575px) {
   .demographics {
     font-size: 1rem;
+  }
+
+  .people-text {
+text-align: center;
   }
 }
 
@@ -597,30 +600,28 @@ margin-left: 25%;
 
 .logo-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-left: 5rem;
 }
 
 .logo2 {
-  display: block;
-  margin-right: 15%;
-  margin-top: 35%;
-  margin-left: 45%;
-}
-
-.logo-image {
-  display: block;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 33rem;
+  padding-bottom: 5rem;
 }
 
 .logo1 {
-  display: block;
-  margin-top: 10%;
-  margin-left: 33%;
+  justify-content: center;
+  padding-left: 33rem;
+  padding-top: 5rem;
 }
 
 .sketches {
   margin-top: 5%;
   padding-bottom: 5rem;
-  margin-left: 80%;
+  margin-left: 85%;
 
 }
 
@@ -632,11 +633,6 @@ margin-left: 25%;
 .design-images {
 display: flex;
 flex-direction: row;
-}
-
-.logo-row {
-flex-direction: column;
-margin-left: 20%;
 }
 
 .list2 {
@@ -687,22 +683,29 @@ margin-bottom: 5%;
 .sketches {
 margin: auto;
 display: block;
+padding-bottom: 0;
+width: 70%;
 }
 
 .logo1 {
-  width: 10rem;
+  display: block;
   justify-content: center;
+  padding-left: 0;
+  padding-top: 0;
 }
 
 .logo2 {
-width: 10rem;
-
+display: block;
+justify-content: center;
+padding-left: 0;
+margin-right: 0;
 }
 
 .logo-row {
 margin: auto;
-display: block;
+/* display: block; */
 display: flex;
+flex-direction: column;
 }
 
 .design-images {
