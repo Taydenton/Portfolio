@@ -299,9 +299,9 @@ font-weight: bold;
 padding-top: 2rem;
 }
 
-/* .research-title {
+.research-title {
 margin-left: 25%;
-} */
+}
 
 .research-list {
 border-radius: 1rem;
@@ -327,6 +327,10 @@ margin-bottom: 2%;
   margin-top: 5%;
   margin-bottom: 5%;
   }
+
+  .research-title {
+  margin-left: 5%;
+}
 }
 
 /* other-guys */
@@ -493,6 +497,10 @@ text-align: center;
     margin-right: 20%;
   }
 
+  .story-title {
+text-align: center;
+  }
+
 }
 
 /* user-flows */
@@ -608,20 +616,22 @@ margin-left: 25%;
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 33rem;
+  padding-left: 27rem;
   padding-bottom: 5rem;
+  width: 50%;
 }
 
 .logo1 {
   justify-content: center;
-  padding-left: 33rem;
+  padding-left: 27rem;
   padding-top: 5rem;
 }
 
 .sketches {
   margin-top: 5%;
   padding-bottom: 5rem;
-  margin-left: 85%;
+  margin-left: 90%;
+  width: 80%;
 
 }
 
@@ -655,7 +665,7 @@ flex-direction: row;
   width: 20rem;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1000px) {
   .list2 {
     font-size: 1.2rem;
   }
@@ -684,7 +694,7 @@ margin-bottom: 5%;
 margin: auto;
 display: block;
 padding-bottom: 0;
-width: 70%;
+width: 50%;
 }
 
 .logo1 {

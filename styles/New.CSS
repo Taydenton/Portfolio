@@ -156,14 +156,14 @@ body nav {
 }
 
 .hero1 h1 {
-  color: #048A81;
+  color: #3B7D75;
   font-family: 'Chivo', sans-serif;
   font-size: 17rem;
   font-weight: 700;
 }
 
 .hero1 span {
-  color: #7bb7b2;
+  color: #438E89;
 }
 
 .slogan1 {
@@ -190,17 +190,6 @@ body nav {
   }
 
 }
-
-/* .arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #048A81;
-  margin: auto;
-  padding-top: 9rem;
-  margin-top: 10%;
-} */
 
 @-webkit-keyframes downarrow {
   0% { -webkit-transform: translateY(0); opacity: 0.4 }
@@ -344,7 +333,7 @@ text-align: center;
 
 
 .hero span {
-  color: #7bb7b2;
+  color: #438E89;
 }
 
 .slogan {
@@ -395,8 +384,8 @@ header {
 }
 
 .biography {
-  margin-left: 28%;
-  margin-right: 28%;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 5%;
 }
 
