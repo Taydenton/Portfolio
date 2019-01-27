@@ -19,6 +19,7 @@ body h2 {
   font-weight: bold;
   text-align: center;
   color: #2d2b2d;
+  margin-top: 3.5rem;
 }
 
 body h3 {
@@ -27,6 +28,7 @@ body h3 {
   font-weight: bold;
   margin-left: 15%;
   color: #048A81;
+  margin-bottom: 1rem;
 }
 
 body p {
@@ -52,19 +54,6 @@ font-style: normal;
   color: #2d2b2d;
 }
 
-@media screen and (max-width: 575px) {
-  body p {
-    font-size: 1.4rem;
-  }
-  .list {
-    font-size: 1.4rem;
-  }
-
-  body h3 {
-    margin-left: 5%;
-  }
-}
-
 body nav {
   color: #AE60C2;
   font-family: 'Chivo', sans-serif;
@@ -81,12 +70,6 @@ body nav {
 .navbar a:link {
   color: #AE60C2;
   text-decoration: none;
-}
-
-@media screen and (max-width: 575px) {
-  .navbar {
-    justify-content: center;
-  }
 }
 
 .navbar li:last-child {
@@ -195,16 +178,9 @@ margin-left: 10rem;
 width: 100px;
   }
 
-
-@media screen and (max-width: 575px) {
-  .personal-logo {
-    width: 75px;
-  }
-}
-
 .item {
   height: 5rem;
-  line-height: 1.5;
+  line-height: 5rem;
   padding: 1rem;
 }
 
@@ -249,17 +225,18 @@ width: 100px;
     margin-right: auto;
   }
   .flow-image {
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .sitemap-image {
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+    }
+
   .laptop-col {
     margin-left: auto;
     margin-right: auto;
@@ -278,6 +255,22 @@ width: 100px;
   .item {
     float: left;
   }
+  .personal-logo {
+    width: 75px;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  body p {
+    font-size: 1.4rem;
+  }
+  .list {
+    font-size: 1.4rem;
+  }
+
+  body h3 {
+    margin-left: 5%;
+  }
 }
 
 /* introduction */
@@ -288,13 +281,6 @@ width: 100px;
   grid-area: 'introduction';
   padding-top: 5rem;
   align-items: center;
-}
-
-@media screen and (max-width: 575px) {
-  .intro-content {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 }
 
 /* research */
@@ -315,6 +301,7 @@ border-bottom: solid 2px #fbe8fa;
 
 .research-title {
 margin-left: 25%;
+margin-top: 0;
 }
 
 .research-list {
@@ -326,29 +313,6 @@ margin-top: 2%;
 margin-bottom: 2%;
 display: flex;
 justify-content: space-evenly;
-}
-
-@media screen and (max-width: 575px) {
-
-  .research-content {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .research-list {
-  border-radius: 1rem;
-  background-color: rgba(175, 101, 194, .5);
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: flex;
-  flex-direction: column;
-  }
-
-  .research-title {
-  margin-left: 5%;
-}
 }
 
 /* other-guys */
@@ -369,7 +333,15 @@ justify-content: space-evenly;
   margin: auto;
 }
 
+.intro-content {
+margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 575px) {
+  .intro-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .research {
     margin-left: 20%;
     margin-right: 20%;
@@ -379,6 +351,26 @@ justify-content: space-evenly;
     margin-right: 20%;
     margin-left: 20%;
   }
+
+  .research-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .research-list {
+  border-radius: 1rem;
+  background-color: rgba(175, 101, 194, .5);
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .research-title {
+  margin-left: 5%;
+}
 
 }
 
@@ -395,7 +387,6 @@ justify-content: space-evenly;
 }
 
 .people-title {
-/* margin-left: 25%; */
 color: #2d2b2d;
 margin: 20px auto;
 }
@@ -409,8 +400,6 @@ margin: 20px auto;
 }
 
 .people-text2 {
-/* margin-left: 25%;
-margin-right: 25%; */
 margin-bottom: 2%;
 }
 
@@ -460,53 +449,12 @@ margin-bottom: 2%;
   font-size: 3.3rem;
   text-align: left;
   line-height: 1.1;
+  color: #293d3b;
 }
 
 .about {
 margin-left: auto;
 margin-right: auto;
-}
-
-@media screen and (max-width: 575px) {
-  .demographics {
-    font-size: 1.4rem;
-  }
-
-  .people-text {
-text-align: center;
-  }
-}
-
-@media screen and (max-width: 575px) {
-
-  .people-header {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .people {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
-   .amy {
-    grid-column: 1;
-    grid-row: 2;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-  }
-
-   .bryce {
-    grid-column: 1;
-    grid-row: 3;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
-  .quote {
-font-size: 2.6rem;
-  }
 }
 
 /* architecture */
@@ -542,7 +490,47 @@ color: #2d2b2d;
 }
 
 
+/* user-flows */
+
+.user-flows {
+  display: flex;
+  flex-direction: column;
+  grid-area: 'user-flows';
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.user-flows-content {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.flow-image {
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+.user-flows-content a:link {
+text-decoration: none;
+font-weight: bold;
+color: #AE60C2;
+}
+
+.sitemap-image {
+  margin: auto;
+  padding-top: 5rem;
+  width: 55%;
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
 @media screen and (max-width: 575px) {
+  .user-flows-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .architecture-text {
     margin-left: 20%;
     margin-right: 20%;
@@ -559,46 +547,41 @@ margin-right: 15%;
 font-size: 1.4rem;
   }
 
-}
+  .demographics {
+    font-size: 1.4rem;
+  }
 
-/* user-flows */
+  .people-text {
+text-align: center;
+  }
 
-.user-flows {
-  display: flex;
-  flex-direction: column;
-  grid-area: 'user-flows';
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
+  .people-header {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-.user-flows-content {
-  margin-left: 25%;
-  margin-right: 25%;
-}
+  .people {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
 
-.flows {
-  margin: auto;
-  max-width: 400px;
-}
+   .amy {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+  }
 
-.user-flows-content a:link {
-text-decoration: none;
-font-weight: bold;
-color: #AE60C2;
-}
+   .bryce {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 
-.sitemap {
-  margin: auto;
-  width: 90%;
-  height: auto;
-  display: block;
-  justify-content: center;
-}
-
-@media screen and (max-width: 575px) {
-  .user-flows-content {
-    margin-left: 20%;
-    margin-right: 20%;
+  .quote {
+font-size: 2.6rem;
   }
 }
 
@@ -660,6 +643,7 @@ color: #AE60C2;
 font-size: 1.4rem;
 line-height: 1.5;
 margin-left: 2%;
+color: #2d2b2d;
 }
 
 .design-title {
@@ -676,21 +660,21 @@ margin-left: 25%;
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 27rem;
+  padding-left: 35rem;
   padding-bottom: 5rem;
   width: 50%;
 }
 
 .logo1 {
   justify-content: center;
-  padding-left: 27rem;
+  padding-left: 35rem;
   padding-top: 5rem;
 }
 
 .sketches {
   margin-top: 5%;
   padding-bottom: 5rem;
-  margin-left: 90%;
+  margin-left: 95%;
   width: 80%;
 
 }
@@ -719,10 +703,14 @@ flex-direction: row;
 
 .oswald {
   width: 25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .droid {
   width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -743,6 +731,7 @@ flex-direction: row;
   .colors-text {
     margin-left: 5%;
     font-size: 1.4rem;
+    color: #2d2b2d;
   }
 
 .style-guide {
@@ -773,7 +762,6 @@ margin-right: 0;
 
 .logo-row {
 margin: auto;
-/* display: block; */
 display: flex;
 flex-direction: column;
 }
@@ -809,18 +797,6 @@ margin-right: 20%;
 
 .wireframes {
   margin-top: 2%;
-}
-
-@media screen and (max-width: 575px) {
-  .screenshot {
-    width: 300px;
-    display: block;
-    margin: auto;
-  }
-  .wireframe-text {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 }
 
 /* testing */
@@ -886,13 +862,23 @@ padding: 1rem;
     margin: auto;
     display: block;
   }
+
+  .screenshot {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  .wireframe-text {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 /* learning */
 
 body footer {
   font-family: 'Chivo', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #048A81
 }
@@ -939,6 +925,7 @@ body footer {
 .connect {
 color: #048A81;
 padding-bottom: 2rem;
+font-size: 2rem;
 }
 
 @media screen and (max-width: 414px) {
