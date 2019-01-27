@@ -16,16 +16,24 @@ body h2 {
   font-family: 'Chivo', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
+  color: #048A81;
 }
 
 body h3 {
   font-size: 1.6rem;
+  color: #2d2b2d;
 }
 
 body p {
   font-family: 'Overpass', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #2d2b2d;
+}
+
+b, strong {
+font-weight: 700;
+font-style: normal;
 }
 
 /* homepage */
@@ -33,12 +41,11 @@ body p {
 .container {
   display: flex;
   flex-direction: column;
-  /* background-color: #F7F0F9; */
 }
 
 .personal-logo {
   margin: 1rem;
-  margin-left: 5rem;
+  margin-left: 10rem;
   width: 100px;
 }
 
@@ -52,13 +59,14 @@ body p {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin-top: 3%;
 }
 
 .laptop-image {
   width: 80%;
   margin-left: 15%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
+
 }
 
 @media screen and (max-width: 575px) {
@@ -67,8 +75,23 @@ body p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
+
+  .laptop-col {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1092px and min-width: 575px;) {
+
+.laptop-col{
+margin: auto;
+padding-bottom: 5rem;
+}
+
 }
 
 /* new */
@@ -105,7 +128,6 @@ body p {
 
 .navbar a {
   color: #AE60C2;
-  /* display: block; */
   font-family: 'Chivo', sans-serif;
   font-size: 1.6rem;
 }
@@ -118,29 +140,6 @@ body nav {
   color: #AE60C2;
   font-family: 'Chivo', sans-serif;
   font-size: 1rem;
-}
-
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
 }
 
 .hero1 {
@@ -167,16 +166,16 @@ body nav {
 }
 
 .slogan1 {
-  color: black;
+  color: #2d2b2d;
   font-family: 'Chivo', sans-serif;
-  font-size: 2.4rem;
+  font-size: 4rem;
   padding-top: 3rem;
-  line-height: 3rem;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 575px) {
   .slogan1 {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   .hero1 {
     padding-left: 5rem;
@@ -252,14 +251,12 @@ body nav {
   flex-basis: 100%;
   flex: 1;
   padding: 5rem;
-  background-color: #FFF;
+  background-color: #f8eaf9;
   grid-area: 1/2/1/6
-  min-height; 100%;
+  min-height: 100%;
   padding: 7.2rem 6.4vw;
   margin-right: 10%;
-  margin-left: 10%;
   margin-bottom: 10%;
-  /* border: .25rem solid #F0E2F3; */
 }
 
 .splendid-space {
@@ -271,14 +268,12 @@ body nav {
   padding-top: 2rem;
   font-size: 2.8rem;
   font-weight: bold;
-  color: black;
-  text-align: center;
+  color: #2d2b2d;;
 }
 
 .featured-text {
-  line-height: 2.2rem;
-text-align: center;
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 .featured-text span {
@@ -289,6 +284,14 @@ text-align: center;
   .featured-text {
     font-size: 1.6rem;
   }
+}
+
+@media screen and (max-width: 1090px) {
+
+  .column {
+    margin-left: 10%;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -341,7 +344,7 @@ text-align: center;
   font-family: 'Chivo', sans-serif;
   padding-top: 3rem;
   font-size: 2.4rem;
-  line-height: 3rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 575px) {
@@ -372,7 +375,7 @@ header {
   height: 5rem;
   line-height: 5rem;
   padding: 1rem;
-  font-style: Chivo;
+  font-style: 'Chivo';
 }
 
 .slogan {
@@ -381,12 +384,17 @@ header {
   margin-left: 27%;
   margin-right: 27%;
   padding-top: 15%;
+  line-height: 1.2;
 }
 
 .biography {
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 5%;
+}
+
+.slogan span {
+color: #d5edeb;
 }
 
 @media screen and (max-width: 575px) {
@@ -400,8 +408,8 @@ header {
 }
 
 body footer {
-  font-family: Chivo;
-  font-size: 1.4rem;
+  font-family: 'Chivo';
+  font-size: 2rem;
   font-weight: bold;
   color: #048A81
 }
