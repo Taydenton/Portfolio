@@ -26,7 +26,9 @@ body h3 {
   font-family: 'Chivo', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  margin-left: 15%;
+  margin: auto;
+  margin-left: 30%;
+  text-align: left;
   color: #048A81;
   margin-bottom: 1rem;
 }
@@ -35,8 +37,8 @@ body p {
   font-family: 'Overpass', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
-  margin-right: 25%;
-  margin-left: 25%;
+  margin: auto;
+  max-width: 600px;
   color: #2d2b2d;
 }
 
@@ -263,13 +265,14 @@ width: 100px;
   }
   body p {
     font-size: 1.4rem;
+    max-width: 350px;
   }
   .list {
     font-size: 1.4rem;
   }
 
   body h3 {
-    margin-left: 5%;
+    margin-left: 15%;
     font-size: 1.5rem;
   }
 
@@ -309,8 +312,7 @@ border-bottom: solid 2px #fbe8fa;
 }
 
 .research-title {
-margin-left: 25%;
-margin-top: 0;
+margin-top: 2rem;
 }
 
 .research-list {
@@ -319,7 +321,6 @@ background-color: rgba(175, 101, 194, .5);
 margin-right: 20%;
 margin-left: 20%;
 margin-top: 2%;
-margin-bottom: 2%;
 display: flex;
 justify-content: space-evenly;
 }
@@ -333,11 +334,6 @@ justify-content: space-evenly;
   padding-top: 5rem;
 }
 
-.other-guys-text {
-  margin-right: 25%;
-  margin-left: 25%;
-}
-
 .component {
   margin: auto;
 }
@@ -347,24 +343,6 @@ margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 575px) {
-  .intro-content {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .research {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  .other-guys-text {
-    margin-right: 20%;
-    margin-left: 20%;
-  }
-
-  .research-content {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 
   .research-list {
   border-radius: 1rem;
@@ -376,11 +354,6 @@ margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   }
-
-  .research-title {
-  margin-left: 5%;
-}
-
 }
 
 /* personas */
@@ -397,7 +370,7 @@ margin-bottom: 2rem;
 
 .people-title {
 color: #2d2b2d;
-margin: 20px auto;
+margin: 5px auto;
 }
 
 .people-text {
@@ -405,7 +378,7 @@ margin: 20px auto;
   display: block;
   margin: auto;
   max-width: 800px;
-  padding-top: 2rem;
+  /* padding-top: 1rem; */
 }
 
 .people-text2 {
@@ -422,7 +395,7 @@ margin-bottom: 2%;
   grid-row: 2;
   background-color: rgba(4, 138, 129, .21);
   border-radius: 1rem;
-  max-width: 400px;
+  max-width: 350px;
   padding: 0 30px;
   margin: auto;
   margin-right: 5%;
@@ -433,9 +406,9 @@ margin-bottom: 2%;
   grid-row: 2;
   background-color: rgba(4, 138, 129, .21);
   border-radius: 1rem;
-  max-width: 400px;
+  max-width: 350px;
   padding: 0 30px;
-  padding-bottom: 80px;
+  padding-bottom: 122px;
   margin: auto;
   margin-left: 5%;
 }
@@ -473,11 +446,10 @@ margin-right: auto;
   display: flex;
   flex-direction: column;
   grid-area: 'architecture';
-  padding-top: 5rem;
   padding-bottom: 5rem;
   border-radius: 1rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 525px;
+  margin: auto;
 }
 
 .architecture-text {
@@ -509,11 +481,6 @@ color: #2d2b2d;
   padding-bottom: 5rem;
 }
 
-.user-flows-content {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
 .flow-image {
   margin: auto;
   display: block;
@@ -535,15 +502,7 @@ color: #AE60C2;
   justify-content: center;
 }
 
-@media screen and (max-width: 575px) {
-  .user-flows-content {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .architecture-text {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+@media screen and (max-width: 700px) {
 
 .story-title {
 text-align: center;
@@ -551,8 +510,6 @@ color: #2d2b2d;
   }
 
   .listc {
-margin-left: 15%;
-margin-right: 15%;
 font-size: 1.4rem;
   }
 
@@ -577,21 +534,29 @@ text-align: center;
    .amy {
     grid-column: 1;
     grid-row: 2;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: auto;
     margin-bottom: 5%;
   }
 
    .bryce {
     grid-column: 1;
     grid-row: 3;
+    margin: auto;
+  }
+
+  body h3 {
     margin-left: 15%;
-    margin-right: 15%;
+    font-size: 1.5rem;
   }
 
   .quote {
 font-size: 2.6rem;
   }
+
+.architecture {
+  max-width: 400px;
+}
+
 }
 
 /* design */
@@ -656,7 +621,7 @@ color: #2d2b2d;
 }
 
 .design-title {
-margin-left: 25%;
+/* margin-left: 25%; */
 }
 
 .logo-row {
@@ -705,21 +670,20 @@ flex-direction: row;
 }
 
 .typography {
-  margin-left: 25%;
-  margin-right: 25%;
+  /* margin-left: 25%;
+  margin-right: 25%; */
   width: 10px;
 }
 
 .oswald {
   width: 25rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: block;
+  margin-left: 25%
 }
 
 .droid {
   width: 20rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+margin-left: 48rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -727,14 +691,14 @@ flex-direction: row;
     font-size: 1.4rem;
   }
   .oswald {
-    width: 15rem;
+    width: 20rem;
   }
   .droid {
-    width: 10rem;
+    width: 20rem;
   }
   .design-content {
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
   }
 
   .colors-text {
@@ -744,7 +708,7 @@ flex-direction: row;
   }
 
 .style-guide {
-margin-right: 10%;
+/* margin-right: 10%; */
 margin-bottom: 5%;
 }
 
@@ -783,14 +747,14 @@ flex-direction: column;
 }
 
 .style-guide {
-  margin-left: 20%;
-  margin-left: 20%;
+  /* margin-left: 20%;
+  margin-left: 20%; */
 }
 
 .color-content {
 display: block;
-margin-left: 20%;
-margin-right: 20%;
+/* margin-left: 20%;
+margin-right: 20%; */
 }
 
 }
@@ -817,17 +781,10 @@ margin-right: 20%;
   display: flex;
   flex-direction: column;
   grid-area: 'testing';
-  padding-top: 5rem;
   padding-bottom: 5rem;
-  padding-top: 5rem;
   border-radius: 1rem;
   margin-right: 10%;
   margin-left: 10%;
-}
-
-.testing-text {
-  margin-right: 20%;
-  margin-left: 20%;
 }
 
 .version {
@@ -850,13 +807,14 @@ justify-content: center;
 padding: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .version {
     width: 300px;
   }
-  .testing-text {
-    margin-left: 20%;
-    margin-right: 20%;
+  .testing {
+    max-width: 500px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .section1
@@ -880,8 +838,8 @@ padding: 1rem;
     margin: auto;
   }
   .wireframe-text {
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
   }
 }
 
@@ -917,13 +875,13 @@ body footer {
   display: flex;
   flex-direction: column;
   grid-area: 'learning';
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .learning-text {
   padding-bottom: 2rem;
-  margin: left: 25%;
-  margin-right: 25%;
+  /* margin: left: 25%;
+  margin-right: 25%; */
 }
 
 .flex-container {
@@ -944,7 +902,7 @@ font-size: 2rem;
     padding: .5rem;
   }
   .learning-text {
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
   }
 }
