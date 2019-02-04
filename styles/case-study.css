@@ -26,9 +26,9 @@ body h3 {
   font-family: 'Chivo', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  margin: auto;
-  margin-left: 30%;
-  text-align: left;
+  /* margin-auto;
+  display: block;
+  text-align: center; */
   color: #048A81;
   margin-bottom: 1rem;
 }
@@ -214,6 +214,13 @@ width: 100px;
   height: 50rem;
 }
 
+@media screen and (max-width: 700px) {
+  .project-slogan {
+    font-size: 3.5rem;
+  }
+}
+
+
 @media screen and (max-width: 575px) {
   .hero {
     flex-direction: column;
@@ -313,6 +320,8 @@ border-bottom: solid 2px #fbe8fa;
 
 .research-title {
 margin-top: 2rem;
+text-align: left;
+display: block;
 }
 
 .research-list {
@@ -670,20 +679,21 @@ flex-direction: row;
 }
 
 .typography {
-  /* margin-left: 25%;
-  margin-right: 25%; */
   width: 10px;
 }
 
 .oswald {
   width: 25rem;
   display: block;
-  margin-left: 25%
+  margin: auto;
+  justify-content: center;
 }
 
 .droid {
   width: 20rem;
-margin-left: 48rem;
+display: block;
+justify-content: center;
+align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -692,13 +702,15 @@ margin-left: 48rem;
   }
   .oswald {
     width: 20rem;
+    display: block;
+    margin: auto;
   }
   .droid {
     width: 20rem;
-  }
-  .design-content {
-    /* margin-left: 20%;
-    margin-right: 20%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    justify-content: center;
   }
 
   .colors-text {
@@ -708,7 +720,6 @@ margin-left: 48rem;
   }
 
 .style-guide {
-/* margin-right: 10%; */
 margin-bottom: 5%;
 }
 
