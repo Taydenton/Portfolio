@@ -10,6 +10,7 @@ html {
 h1 {
   font-family: 'Chivo', sans-serif;
   font-weight: bold;
+  font-size: 3.2rem;
 }
 
 body h2 {
@@ -367,6 +368,10 @@ header {
   text-align: center;
 }
 
+.intro {
+color: #048A81;
+}
+
 .item {
   height: 5rem;
   line-height: 5rem;
@@ -381,6 +386,7 @@ header {
   margin-right: 27%;
   padding-top: 15%;
   line-height: 1.2;
+  text-indent: -8px;
 }
 
 .biography {
@@ -404,6 +410,10 @@ color: #d5edeb;
 
   .biography {
   max-width: 300px;
+  }
+
+  .intro {
+font-size: 2rem;
   }
 }
 
