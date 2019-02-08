@@ -306,13 +306,11 @@ width: 100px;
   display: flex;
   flex-direction: column;
   grid-area: 'research';
-  padding-top: 5rem;
 }
 
 .research-header {
 text-align: left;
 font-weight: bold;
-padding-top: 2rem;
 border-bottom: solid 2px #fbe8fa;
 }
 
@@ -549,12 +547,14 @@ text-align: center;
     grid-row: 2;
     margin: auto;
     margin-bottom: 5%;
+    max-width: 350px;
   }
 
    .bryce {
     grid-column: 1;
     grid-row: 3;
     margin: auto;
+    max-width: 350px;
   }
 
   .quote {
