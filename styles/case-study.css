@@ -312,6 +312,7 @@ width: 100px;
 text-align: left;
 font-weight: bold;
 border-bottom: solid 2px #fbe8fa;
+margin-top: 10%;
 }
 
 .research-title {
@@ -357,6 +358,18 @@ margin-bottom: 2rem;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
+  }
+
+  .research-header {
+    text-align: center;
+  }
+
+  .list {
+text-align: center;
+  }
+
+  .listb {
+text-align: center;
   }
 }
 
@@ -518,6 +531,10 @@ color: #AE60C2;
 .story-title {
 text-align: center;
 color: #2d2b2d;
+  }
+
+  .architecture {
+    max-width: 450px;
   }
 
   .listc {
